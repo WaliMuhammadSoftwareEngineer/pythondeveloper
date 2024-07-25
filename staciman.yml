@@ -1,0 +1,22 @@
+comments:
+  allowedFields:
+    - name
+    - email
+    - comment
+  branch: "main"
+  commitMessage: "Add comment by {fields.name}"
+  filename: "comments/{@timestamp}"
+  format: "json"
+  moderation: true
+  path: "data/comments"
+  requiredFields:
+    - name
+    - email
+    - comment
+  transforms:
+    email: "md5"
+  generatedFields:
+    date:
+      type: "date"
+      options:
+        format: "iso8601"
