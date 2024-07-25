@@ -232,22 +232,12 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="https://api.staticman.net/v2/entry/walimuhammadSoftwareEngineer/MyPortfolio/main" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" name="fields[name]" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" name="fields[email]" placeholder="Enter Email" required>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="fields[comment]" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                    </div>
-                </div>
-            </form>
+            <form action="https://api.staticman.net/v2/entry/walimuhammadSoftwareEngineer/MyPortfolio/main" method="POST">
+                <input type="text" name="fields[name]" placeholder="Test Name" required>
+                <input type="email" name="fields[email]" placeholder="Test Email" required>
+                <textarea name="fields[comment]" placeholder="Test Comment"></textarea>
+                <input type="submit" value="Submit">
+            </form>            
             
         </div><!-- end of container -->
     </section><!-- end of contact section -->
